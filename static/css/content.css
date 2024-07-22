@@ -1,0 +1,15 @@
+:root{
+    --white: #f9f9f9;
+    --green: #229395;
+    --green-light: #7acbcd;
+    --blue-light:#0DD6FE;
+    --blue:#0c4da2;
+    --black: #36383F;
+    --grey: #85888C;
+}
+
+
+.container{
+    width: 100%;
+    background-color: var(--white);
+}

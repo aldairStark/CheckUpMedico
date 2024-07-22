@@ -1,0 +1,17 @@
+:root{
+    --white: #f9f9f9;
+    --green: #229395;
+    --green-light: #7acbcd;
+    --blue-light:#0DD6FE;
+    --blue:#0c4da2;
+    --black: #36383F;
+    --grey: #85888C;
+}
+.formLogin{
+margin-top: 50px;
+align-items: center;
+}
+.log{
+    text-align: left;
+    margin-left: 10px;
+}

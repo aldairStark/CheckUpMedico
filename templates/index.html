@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Pagina de Inicio {% endblock %}
+
+{% block content %}
+<div class="container" >
+    <div class="jumbotron">
+     
+      
+     
+        {% if name %}
+        <h1 class="display-4">Hola {{name}}</h1>
+        <p class="lead">Este es tu Check Up Medico del dia {{ date | Today }}</p>
+        {% else %}
+        <h1 class="display-4">Hola </h1>
+        <p class="lead">Este es tu Check Up Medico</p>
+        {% endif %}
+        <hr class="my-4">
+        <div class="form-group">
+            <button class="btn btn-primary">Generar Carta Pase</button>
+        </div>
+    </div>
+    <div>
+        <h2>Lista de amigos</h2>
+        <ul>
+            {% for friend in friends %}
+            <li>{{ friend }}</li>
+            {% endfor %}
+
+            {{ repeat('hola',3) }}
+        </ul>
+    </div>
+   
+</div>
+{% endblock %}
+
+      

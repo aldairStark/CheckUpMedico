@@ -1,0 +1,31 @@
+{% extends 'baselog.html' %}
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<div class="container" >
+    <div class="formLogin">
+        <h1>
+            Segunda Autenticacion 
+        </h1>
+        <form action="">
+            <div class="form-group">
+    
+                <label for="tokenAuth">Token</label>
+                <input type="password" class="form-control" id="token" style="width: 350px;" aria-describedby="tokenHelp">
+                <small id="tokenHelp" class="form-text text-muted">Introduzca el token que se le envio a su Email</small>
+            </div>
+            <!-- <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div> -->
+            <!-- <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Authenticar</button>
+        </form>
+    </div>
+   
+   
+</div>
+{% endblock %}
